@@ -1,0 +1,78 @@
+{
+    "appenders": {
+        "ConsoleLogAppender": {
+            "type": "console"
+        },
+        "SystemLogAppender": {
+            "type": "file",
+            "filename": "./log/system.log",
+            "maxLogSize": 5000000,
+            "backups": 10
+        },
+        "SystemLogAppenderSync": {
+            "type": "fileSync",
+            "filename": "./log/system.log",
+            "maxLogSize": 5000000,
+            "backups": 10
+        },
+        "PerformanceLogAppender": {
+            "type": "file",
+            "filename": "./log/performance.log",
+            "maxLogSize": 5000000,
+            "backups": 10
+        },
+        "HttpLogAppender": {
+            "type": "dateFile",
+            "filename": "./log/http.log",
+            "pattern": ".yyyy-MM-dd",
+            "daysToKeep": 90
+        },
+        "AccessLogAppender": {
+            "type": "dateFile",
+            "filename": "./log/access.log",
+            "pattern": ".yyyy-MM-dd",
+            "daysToKeep": 90
+        },
+        "SystemErrorLogAppender": {
+            "type": "dateFile",
+            "filename": "./log/error.log",
+            "pattern": ".yyyy-MM-dd",
+            "daysToKeep": 120
+        },
+        "SystemErrorOnlyFilter": {
+            "type": "logLevelFilter",
+            "appender": "SystemErrorLogAppender",
+            "level": "error"
+        }
+    },
+    "categories": {
+        "default": {
+            "appenders": ["ConsoleLogAppender"],
+            "level": "all"
+        },
+        "system": {
+            "appenders": ["SystemLogAppender", "SystemErrorOnlyFilter"],
+            "level": "info"
+        },
+        "systemsync": {
+            "appenders": ["SystemLogAppenderSync"],
+            "level": "info"
+        },
+        "performance": {
+            "appenders": ["PerformanceLogAppender"],
+            "level": "info"
+        },
+        "http": {
+            "appenders": ["HttpLogAppender"],
+            "level": "info"
+        },
+        "access": {
+            "appenders": ["AccessLogAppender"],
+            "level": "info"
+        },
+        "console": {
+            "appenders": ["ConsoleLogAppender"],
+            "level": "all"
+        }
+    }
+}

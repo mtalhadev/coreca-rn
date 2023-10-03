@@ -1,0 +1,57 @@
+{
+  "cli": {
+    "version": ">= 2.1.0"
+  },
+  "build": {
+    "development": {
+      "channel": "development",
+      "developmentClient": true,
+      "distribution": "internal",
+      "ios": {
+        "buildConfiguration": "Debug",
+        "simulator": true,
+        "image": "latest"
+      },
+      "env": {
+        "CONFIG_ENV": "development"
+      }
+    },
+    "preview": {
+      "channel": "preview",
+      "ios": {
+        "image": "latest"
+      },
+      "env": {
+        "CONFIG_ENV": "development"
+      }
+    },
+    "production": {
+      "channel": "production",
+      "ios": {
+        "image": "latest"
+      },
+      "env": {
+        "CONFIG_ENV": "production"
+      }
+    }
+  },
+  "submit": {
+    "production": {
+      "android": {
+        "serviceAccountKeyPath": "./expo-coreca-service-account.json",
+        "track": "production"
+      },
+      "ios": {
+        "appleId": "EXPO_APPLE_ID",
+        "ascAppId": "1590311325",
+        "appleTeamId": "G27X2L7784"
+      }
+    },
+    "preview": {
+      "extends": "production",
+      "android": {
+        "track": "internal"
+      }
+    }
+  }
+}

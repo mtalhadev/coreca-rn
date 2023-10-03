@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>4658969885-h5138pkrl692s5m1c9aet7gfo0iu6p94.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.4658969885-h5138pkrl692s5m1c9aet7gfo0iu6p94</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCh2mBtNYMhqzQhkm9kwyD5bvOwnxRfVro</string>
+	<key>GCM_SENDER_ID</key>
+	<string>4658969885</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.coreca.app</string>
+	<key>PROJECT_ID</key>
+	<string>coreca-98aa2</string>
+	<key>STORAGE_BUCKET</key>
+	<string>coreca-98aa2.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:4658969885:ios:039714ec474bc3a139b5f4</string>
+	<key>DATABASE_URL</key>
+	<string>https://coreca-98aa2-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>

@@ -1,0 +1,204 @@
+import { getFirestore, Firestore, BulkWriter } from 'firebase-admin/firestore'
+import { promises as fs } from 'fs'
+import { v1 as uuidv1 } from 'uuid'
+import {
+  makeTime,
+  traverseObjects,
+  IImportOptions,
+  parseAndConvertDates,
+  makeGeoPoint,
+  parseAndConvertGeos,
+} from './helper'
+
+/**
+ * Restore data to firestore
+ *
+ * @param {string} fileName
+ * @param {IImportOptions} options
+ */
+export const restore = async (
+  fileName: string | Object,
+  options: IImportOptions
+): Promise<{ status: boolean; message: string }> => {
+  try {
+    const db = getFirestore()
+    if (typeof fileName === 'object') {
+      const dataObj = fileName
+      await updateCollection(db, dataObj, options)
+      return Promise.resolve({ status: true, message: 'success' })
+    } else {
+      const data = await fs.readFile(fileName, 'utf8')
+      // Turn string from file to an Array
+      const dataObj = JSON.parse(data)
+      await updateCollection(db, dataObj, options)
+      return Promise.resolve({ status: true, message: 'success' })
+    }
+  } catch (e) {
+    return Promise.resolve({ status: false, message: 'exception' })
+  }
+}
+
+/**
+ * Update data to firestore
+ *
+ * @param {Firestore} db
+ * @param {object} dataObj
+ * @param {IImportOptions} options
+ */
+const updateCollection = async (
+  db: Firestore,
+  dataObj: object,
+  options: IImportOptions = {}
+) => {
+  const br = db.bulkWriter()
+  for (const index in dataObj) {
+    const collectionName = index
+    for (const doc in dataObj[index]) {
+      if (dataObj[index].hasOwnProperty(doc)) {
+        // assign document id for array type
+        const docId = Array.isArray(dataObj[index]) ? uuidv1() : doc
+        if (!Array.isArray(dataObj[index])) {
+          const subCollections = dataObj[index][docId]['subCollection']
+          delete dataObj[index][doc]['subCollection']
+          await startUpdating(
+            db,
+            br,
+            collectionName,
+            docId,
+            dataObj[index][doc],
+            options
+          )
+
+          if (subCollections) {
+            await updateCollection(db, subCollections, options)
+          }
+        } else {
+          const subCollections = dataObj[index][doc]['subCollection']
+
+          delete dataObj[index][doc]['subCollection']
+
+          await startUpdating(
+            db,
+            br,
+            collectionName,
+            docId,
+            dataObj[index][doc],
+            options
+          )
+
+          if (subCollections) {
+            for (const subIndex in subCollections) {
+              const revivedSubCollection = {}
+              const subCollectionPath = `${collectionName}/${docId}/${subIndex}`
+              revivedSubCollection[subCollectionPath] = subCollections[subIndex]
+              await updateCollection(db, revivedSubCollection, options)
+            }
+          }
+        }
+      }
+    }
+  }
+  await br.close()
+}
+
+/**
+ * Write data to database
+ * @param db
+ * @param br
+ * @param collectionName
+ * @param docId
+ * @param data
+ * @param options
+ */
+
+const startUpdating = async (
+  db: Firestore,
+  br: BulkWriter,
+  collectionName: string,
+  docId: string,
+  data: object,
+  options: IImportOptions
+) => {
+  // Update date value
+  if (options.dates && options.dates.length > 0) {
+    options.dates.forEach((date) => {
+      if (data.hasOwnProperty(date)) {
+        // check type of the date
+        if (Array.isArray(data[date])) {
+          data[date] = data[date].map((d) => makeTime(d))
+        } else {
+          data[date] = makeTime(data[date])
+        }
+      }
+
+      // Check for nested date
+      if (date.indexOf('.') > -1) {
+        traverseObjects(data, (value) => {
+          if (!value.hasOwnProperty('_seconds')) {
+            return null
+          }
+          return makeTime(value)
+        })
+      }
+    })
+  }
+
+  if (options.autoParseDates) {
+    parseAndConvertDates(data)
+  }
+
+  // reference key
+  if (options.refs && options.refs.length > 0) {
+    options.refs.forEach((ref) => {
+      if (data.hasOwnProperty(ref)) {
+        // check type of the reference
+        if (Array.isArray(data[ref])) {
+          data[ref] = data[ref].map((ref) => db.doc(ref))
+        } else {
+          data[ref] = db.doc(data[ref])
+        }
+      }
+    })
+  }
+
+  // Enter geo value
+  if (options.geos && options.geos.length > 0) {
+    options.geos.forEach((geo) => {
+      if (data.hasOwnProperty(geo)) {
+        // array of geo locations
+        if (Array.isArray(data[geo])) {
+          data[geo] = data[geo].map((geoValues) => makeGeoPoint(geoValues))
+        } else {
+          data[geo] = makeGeoPoint(data[geo])
+        }
+      }
+
+      if (geo.indexOf('.') > -1) {
+        traverseObjects(data, (value) => {
+          if (!value.hasOwnProperty('_latitude')) {
+            return null
+          }
+          return makeGeoPoint(value)
+        })
+      }
+    })
+  }
+
+  if (options.autoParseGeos) {
+    parseAndConvertGeos(data)
+  }
+
+  try {
+    const docref = db.collection(collectionName).doc(docId)
+    br.set(docref, data)
+    return Promise.resolve({
+      status: true,
+      message: `${docId} was successfully added to firestore!`,
+    })
+  } catch (e) {
+    return Promise.resolve({
+      status: false,
+      message: `exception\n ${e}`,
+    })
+  }
+}

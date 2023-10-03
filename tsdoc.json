@@ -1,0 +1,42 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+    "tagDefinitions": [
+      {
+        "tagName": "@myTag",
+        "syntaxKind": "modifier"
+      },
+      {
+        "tagName": "@deprecated",
+        "syntaxKind": "modifier"
+      },
+      {
+        "tagName": "@objective",
+        "syntaxKind": "block"
+      },
+      {
+        "tagName": "@error",
+        "syntaxKind": "block"
+      },
+      {
+        "tagName": "@author",
+        "syntaxKind": "block"
+      },
+      {
+        "tagName": "@prop",
+        "syntaxKind": "block",
+        "allowMultiple": true
+      },
+      {
+        "tagName": "@requires",
+        "syntaxKind": "block"
+      },
+      {
+        "tagName": "@partial",
+        "syntaxKind": "block"
+      },
+      {
+        "tagName": "@summary",
+        "syntaxKind": "block"
+      }
+    ]
+  }

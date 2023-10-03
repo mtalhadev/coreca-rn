@@ -1,0 +1,225 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SelectIndividualItem test renders UI correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "borderRadius": 3,
+        "flexDirection": "row",
+        "height": 50,
+        "marginBottom": 5,
+        "paddingBottom": 0,
+        "width": 730,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#888",
+        "borderBottomLeftRadius": 40,
+        "borderBottomRightRadius": 40,
+        "borderRadius": 40,
+        "borderTopLeftRadius": 40,
+        "borderTopRightRadius": 40,
+        "height": 40,
+        "justifyContent": "center",
+        "marginRight": 10,
+        "width": 40,
+      }
+    }
+  >
+    <RNCMaskedView>
+      <View
+        pointerEvents="none"
+        style={
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "backgroundColor": "#000",
+              "borderRadius": 40,
+              "height": 40,
+              "width": 40,
+            }
+          }
+        />
+      </View>
+      <Image
+        resizeMode="cover"
+        source={
+          Object {
+            "uri": "https://profile-logo-s",
+          }
+        }
+        style={
+          Object {
+            "height": 40,
+            "width": 40,
+          }
+        }
+        testID="ImageIcon-Image"
+      />
+    </RNCMaskedView>
+    <View
+      style={
+        Object {
+          "borderColor": "#C7D601",
+          "borderRadius": 40,
+          "borderWidth": 1,
+          "height": 40,
+          "position": "absolute",
+          "width": 40,
+        }
+      }
+      testID="ImageIcon-Border"
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "width": 680,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "height": 45,
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#000",
+            "fontFamily": "NotoSansJP_500Medium",
+            "fontSize": 15,
+          }
+        }
+      >
+        ABC
+      </Text>
+      <Text
+        ellipsizeMode="tail"
+        numberOfLines={1}
+        style={
+          Object {
+            "color": "#666",
+            "fontFamily": "NotoSansJP_400Regular",
+            "fontSize": 13,
+          }
+        }
+      >
+        ABCDEFG
+      </Text>
+    </View>
+    <View
+      collapsable={false}
+      onTouchEnd={[Function]}
+      onTouchStart={[Function]}
+      style={
+        Object {
+          "backgroundColor": "transparent",
+          "borderColor": "#606060",
+          "borderRadius": 32,
+          "borderWidth": 1,
+          "elevation": 0,
+          "height": 32,
+          "justifyContent": "center",
+          "opacity": 1,
+          "paddingHorizontal": 20,
+          "shadowColor": "#000",
+          "shadowOffset": Object {
+            "height": 2,
+            "width": 0,
+          },
+          "shadowOpacity": 0,
+          "shadowRadius": 8,
+        }
+      }
+    >
+      <View
+        accessibilityState={
+          Object {
+            "disabled": false,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flex": 1,
+              "flexDirection": "row",
+              "justifyContent": undefined,
+              "paddingHorizontal": undefined,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignContent": undefined,
+                "flexDirection": undefined,
+                "justifyContent": undefined,
+                "paddingTop": 0,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#343538",
+                  "fontFamily": "NotoSansJP_500Medium",
+                  "fontSize": 14,
+                  "lineHeight": 32,
+                  "paddingTop": 0,
+                  "textAlign": undefined,
+                }
+              }
+            >
+              admin:ToChat
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

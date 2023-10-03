@@ -1,0 +1,44 @@
+{
+  "react-native": {
+    "crashlytics_debug_enabled": true,
+    "crashlytics_disable_auto_disabler": true,
+    "crashlytics_auto_collection_enabled": true,
+    "crashlytics_is_error_generation_on_js_crash_enabled": true,
+    "crashlytics_javascript_exception_handler_chaining_enabled": true
+  },
+  "hosting": {
+    "public": "hosting",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  },
+  "functions": {
+    "predeploy": "npm --prefix functions run build",
+    "source": "../coreca-server"
+  },
+  "emulators": {
+    "firestore": {
+      "port": 8980
+    },
+    "storage": {
+      "port": 9199
+    },
+    "ui": {
+      "enabled": true
+    },
+    "auth": {
+      "port": 9810
+    },
+    "functions": {
+      "port": 5201
+    },
+    "hosting": {
+      "port": 5210
+    }
+  },
+  "storage": {
+    "rules": "storage.rules"
+  }
+}

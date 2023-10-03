@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="130" height="130" viewBox="0 0 130 130">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="楕円形_88" data-name="楕円形 88" cx="65" cy="65" r="65" transform="translate(62.614 43.614)" fill="#000"/>
+    </clipPath>
+  </defs>
+  <g id="マスクグループ_29" data-name="マスクグループ 29" transform="translate(-62.614 -43.614)" clip-path="url(#clip-path)">
+    <g id="suitcase-black-shape" transform="translate(87.964 75.065)">
+      <g id="グループ_390" data-name="グループ 390" transform="translate(0 0)">
+        <rect id="長方形_293" data-name="長方形 293" width="23.922" height="4.668" transform="translate(28.364 51.659)" fill="#000"/>
+        <path id="パス_163" data-name="パス 163" d="M77.922,25.352H55.788V14.78a2.625,2.625,0,0,0-2.626-2.626H27.489a2.625,2.625,0,0,0-2.626,2.626V25.351H2.729A2.729,2.729,0,0,0,0,28.08V61.042H80.65V28.081A2.729,2.729,0,0,0,77.922,25.352ZM33.615,20.906H47.035v4.444H33.615Z" transform="translate(0 -12.154)" fill="#000"/>
+        <path id="パス_164" data-name="パス 164" d="M54.912,89.586v4.668a2.625,2.625,0,0,1-2.625,2.625H28.364a2.625,2.625,0,0,1-2.626-2.625V89.586c0-.05.012-.1.015-.146H0V99.645a2.729,2.729,0,0,0,2.729,2.729H77.922a2.729,2.729,0,0,0,2.729-2.729V89.44H54.9C54.9,89.489,54.912,89.536,54.912,89.586Z" transform="translate(0 -37.926)" fill="#000"/>
+      </g>
+    </g>
+  </g>
+</svg>

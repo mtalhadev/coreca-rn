@@ -1,0 +1,9 @@
+# Dependency directories
+node_modules/
+firestore-export-import/node_modules/
+lib/firestore-export-import/node_modules/
+
+# others
+data/
+data-ultraLarge.json
+*.txt

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="plus" transform="translate(-100 -733)">
+    <g id="長方形_330" data-name="長方形 330" transform="translate(100 742)" fill="#000" stroke="#000" stroke-width="1">
+      <rect width="20" height="2" rx="1" stroke="none"/>
+      <rect x="0.5" y="0.5" width="19" height="1" rx="0.5" fill="none"/>
+    </g>
+    <rect id="長方形_331" data-name="長方形 331" width="20" height="2" rx="1" transform="translate(111 733) rotate(90)"/>
+  </g>
+</svg>

@@ -1,0 +1,1006 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Message test renders Message type - note 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "flex": 1,
+        },
+        undefined,
+        undefined,
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "borderBottomColor": "#aaa",
+            "borderBottomWidth": 0.3,
+            "flexDirection": "column",
+          },
+          undefined,
+        ]
+      }
+    >
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "marginVertical": 8,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#888",
+                "borderBottomLeftRadius": 25,
+                "borderBottomRightRadius": 25,
+                "borderRadius": 25,
+                "borderTopLeftRadius": 25,
+                "borderTopRightRadius": 25,
+                "height": 25,
+                "justifyContent": "center",
+                "marginTop": -4,
+                "width": 25,
+              }
+            }
+          >
+            <RNCMaskedView>
+              <View
+                pointerEvents="none"
+                style={
+                  Object {
+                    "bottom": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  }
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#000",
+                      "borderRadius": 25,
+                      "height": 25,
+                      "width": 25,
+                    }
+                  }
+                />
+              </View>
+              <Image
+                resizeMode="cover"
+                source={
+                  Object {
+                    "uri": "https://profile-image-xs",
+                  }
+                }
+                style={
+                  Object {
+                    "height": 25,
+                    "width": 25,
+                  }
+                }
+                testID="ImageIcon-Image"
+              />
+            </RNCMaskedView>
+            <View
+              style={
+                Object {
+                  "borderColor": "#C7D601",
+                  "borderRadius": 25,
+                  "borderWidth": 1,
+                  "height": 25,
+                  "position": "absolute",
+                  "width": 25,
+                }
+              }
+              testID="ImageIcon-Border"
+            />
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "justifyContent": "center",
+              "marginLeft": 10,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "flex-start",
+                "flexDirection": "column",
+                "paddingRight": 6,
+              }
+            }
+          >
+            <Text
+              ellipsizeMode="middle"
+              numberOfLines={1}
+              style={
+                Object {
+                  "fontFamily": "NotoSansJP_700Bold",
+                  "fontSize": 12,
+                  "lineHeight": 14,
+                  "width": 640,
+                }
+              }
+            >
+              ABC
+            </Text>
+            <Text
+              style={
+                Object {
+                  "fontFamily": "NotoSansJP_400Regular",
+                  "fontSize": 12,
+                  "lineHeight": 16,
+                  "marginTop": 6,
+                  "width": 640,
+                }
+              }
+            >
+              <Text
+                ellipsizeMode="middle"
+                onPress={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "fontFamily": "NotoSansJP_400Regular",
+                      "fontSize": 12,
+                      "lineHeight": 16,
+                      "marginTop": 6,
+                      "width": 640,
+                    },
+                    Object {
+                      "color": "#0D6CB2",
+                      "fontFamily": "NotoSansJP_700Bold",
+                    },
+                  ]
+                }
+              >
+                @TestUser
+              </Text>
+              <Text
+                ellipsizeMode="middle"
+                style={
+                  Array [
+                    Object {
+                      "fontFamily": "NotoSansJP_400Regular",
+                      "fontSize": 12,
+                      "lineHeight": 16,
+                      "marginTop": 6,
+                      "width": 640,
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                 It's a test
+              </Text>
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "flex-end",
+            }
+          }
+        >
+          <View
+            collapsable={false}
+            onTouchEnd={[Function]}
+            onTouchStart={[Function]}
+            style={
+              Object {
+                "backgroundColor": "transparent",
+                "borderColor": "#606060",
+                "borderRadius": 30,
+                "borderWidth": 1,
+                "elevation": 0,
+                "height": 30,
+                "justifyContent": "center",
+                "marginLeft": -30,
+                "marginTop": 2,
+                "opacity": 1,
+                "paddingHorizontal": 15,
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0,
+                "shadowRadius": 8,
+              }
+            }
+          >
+            <View
+              accessibilityState={
+                Object {
+                  "disabled": false,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flex": 1,
+                  "justifyContent": "center",
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "flex": 1,
+                    "flexDirection": "row",
+                    "justifyContent": undefined,
+                    "paddingHorizontal": undefined,
+                  }
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "alignContent": undefined,
+                      "flexDirection": undefined,
+                      "justifyContent": undefined,
+                      "paddingTop": 0,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      Object {
+                        "color": "#343538",
+                        "fontFamily": "NotoSansJP_500Medium",
+                        "fontSize": 14,
+                        "lineHeight": 30,
+                        "paddingTop": 0,
+                        "textAlign": undefined,
+                      }
+                    }
+                  >
+                    Notes
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+  <RCTSafeAreaView
+    emulateUnlessSupported={true}
+    pointerEvents="box-none"
+    style={
+      Object {
+        "bottom": 0,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  >
+    <View
+      collapsable={false}
+      onLayout={[Function]}
+      pointerEvents="box-none"
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    />
+  </RCTSafeAreaView>
+</View>
+`;
+
+exports[`Message test renders Message type - picture 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "flex": 1,
+        },
+        undefined,
+        undefined,
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "borderBottomColor": "#aaa",
+            "borderBottomWidth": 0.3,
+            "flexDirection": "column",
+          },
+          undefined,
+        ]
+      }
+    >
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "marginVertical": 8,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#888",
+                "borderBottomLeftRadius": 25,
+                "borderBottomRightRadius": 25,
+                "borderRadius": 25,
+                "borderTopLeftRadius": 25,
+                "borderTopRightRadius": 25,
+                "height": 25,
+                "justifyContent": "center",
+                "marginTop": -4,
+                "width": 25,
+              }
+            }
+          >
+            <RNCMaskedView>
+              <View
+                pointerEvents="none"
+                style={
+                  Object {
+                    "bottom": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  }
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#000",
+                      "borderRadius": 25,
+                      "height": 25,
+                      "width": 25,
+                    }
+                  }
+                />
+              </View>
+              <Image
+                resizeMode="cover"
+                source={
+                  Object {
+                    "uri": "https://profile-image-xs",
+                  }
+                }
+                style={
+                  Object {
+                    "height": 25,
+                    "width": 25,
+                  }
+                }
+                testID="ImageIcon-Image"
+              />
+            </RNCMaskedView>
+            <View
+              style={
+                Object {
+                  "borderColor": "#C7D601",
+                  "borderRadius": 25,
+                  "borderWidth": 1,
+                  "height": 25,
+                  "position": "absolute",
+                  "width": 25,
+                }
+              }
+              testID="ImageIcon-Border"
+            />
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "justifyContent": "center",
+              "marginLeft": 10,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "flex-start",
+                "flexDirection": "column",
+                "paddingRight": 6,
+              }
+            }
+          >
+            <Text
+              ellipsizeMode="middle"
+              numberOfLines={1}
+              style={
+                Object {
+                  "fontFamily": "NotoSansJP_700Bold",
+                  "fontSize": 12,
+                  "lineHeight": 14,
+                  "width": 640,
+                }
+              }
+            >
+              ABC
+            </Text>
+            <View
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+            >
+              <Image
+                source={
+                  Object {
+                    "uri": "https://attachment-picture",
+                  }
+                }
+                style={
+                  Object {
+                    "borderRadius": 5,
+                    "height": 450,
+                    "marginTop": 6,
+                    "resizeMode": "contain",
+                    "width": 450,
+                  }
+                }
+                testID="message-picture"
+              />
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "flexDirection": "row",
+                "flexWrap": "wrap",
+                "marginTop": 8,
+                "width": 640,
+              }
+            }
+          />
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "flex-end",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "flex-end",
+                "flexDirection": "column",
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#737680",
+                  "fontSize": 10,
+                  "marginTop": 20,
+                }
+              }
+            >
+              11:30
+            </Text>
+            <View
+              style={
+                Object {
+                  "marginTop": 10,
+                }
+              }
+            >
+              <View
+                collapsable={false}
+              >
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                >
+                  <View
+                    ctx={
+                      Object {
+                        "menuActions": Object {
+                          "_getOpenedMenu": [Function],
+                          "_notify": [Function],
+                          "closeMenu": [Function],
+                          "isMenuOpen": [Function],
+                          "openMenu": [Function],
+                          "toggleMenu": [Function],
+                        },
+                        "menuRegistry": Object {
+                          "getAll": [Function],
+                          "getMenu": [Function],
+                          "setOptionsCustomStyles": [Function],
+                          "subscribe": [Function],
+                          "unsubscribe": [Function],
+                          "updateLayoutInfo": [Function],
+                        },
+                      }
+                    }
+                    style={
+                      Array [
+                        Object {
+                          "top": -42,
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    <Text />
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+  <RCTSafeAreaView
+    emulateUnlessSupported={true}
+    pointerEvents="box-none"
+    style={
+      Object {
+        "bottom": 0,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  >
+    <View
+      collapsable={false}
+      onLayout={[Function]}
+      pointerEvents="box-none"
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    />
+  </RCTSafeAreaView>
+</View>
+`;
+
+exports[`Message test renders Message type - text 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "flex": 1,
+        },
+        undefined,
+        undefined,
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "borderBottomColor": "#aaa",
+            "borderBottomWidth": 0.3,
+            "flexDirection": "column",
+          },
+          undefined,
+        ]
+      }
+    >
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "flexDirection": "row",
+            "marginVertical": 8,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#888",
+                "borderBottomLeftRadius": 25,
+                "borderBottomRightRadius": 25,
+                "borderRadius": 25,
+                "borderTopLeftRadius": 25,
+                "borderTopRightRadius": 25,
+                "height": 25,
+                "justifyContent": "center",
+                "marginTop": -4,
+                "width": 25,
+              }
+            }
+          >
+            <RNCMaskedView>
+              <View
+                pointerEvents="none"
+                style={
+                  Object {
+                    "bottom": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  }
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#000",
+                      "borderRadius": 25,
+                      "height": 25,
+                      "width": 25,
+                    }
+                  }
+                />
+              </View>
+              <Image
+                resizeMode="cover"
+                source={
+                  Object {
+                    "uri": "https://profile-image-xs",
+                  }
+                }
+                style={
+                  Object {
+                    "height": 25,
+                    "width": 25,
+                  }
+                }
+                testID="ImageIcon-Image"
+              />
+            </RNCMaskedView>
+            <View
+              style={
+                Object {
+                  "borderColor": "#C7D601",
+                  "borderRadius": 25,
+                  "borderWidth": 1,
+                  "height": 25,
+                  "position": "absolute",
+                  "width": 25,
+                }
+              }
+              testID="ImageIcon-Border"
+            />
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "justifyContent": "center",
+              "marginLeft": 10,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "flex-start",
+                "flexDirection": "column",
+                "paddingRight": 6,
+              }
+            }
+          >
+            <Text
+              ellipsizeMode="middle"
+              numberOfLines={1}
+              style={
+                Object {
+                  "fontFamily": "NotoSansJP_700Bold",
+                  "fontSize": 12,
+                  "lineHeight": 14,
+                  "width": 640,
+                }
+              }
+            >
+              ABC
+            </Text>
+            <Text
+              style={
+                Object {
+                  "fontFamily": "NotoSansJP_400Regular",
+                  "fontSize": 12,
+                  "lineHeight": 16,
+                  "marginTop": 6,
+                  "width": 640,
+                }
+              }
+            >
+              <Text
+                ellipsizeMode="middle"
+                onPress={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "fontFamily": "NotoSansJP_400Regular",
+                      "fontSize": 12,
+                      "lineHeight": 16,
+                      "marginTop": 6,
+                      "width": 640,
+                    },
+                    Object {
+                      "color": "#0D6CB2",
+                      "fontFamily": "NotoSansJP_700Bold",
+                    },
+                  ]
+                }
+              >
+                @TestUser
+              </Text>
+              <Text
+                ellipsizeMode="middle"
+                style={
+                  Array [
+                    Object {
+                      "fontFamily": "NotoSansJP_400Regular",
+                      "fontSize": 12,
+                      "lineHeight": 16,
+                      "marginTop": 6,
+                      "width": 640,
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                 It's a test
+              </Text>
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "flexDirection": "row",
+                "flexWrap": "wrap",
+                "marginTop": 8,
+                "width": 640,
+              }
+            }
+          />
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "flex-end",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "flex-end",
+                "flexDirection": "column",
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#737680",
+                  "fontSize": 10,
+                  "marginTop": 20,
+                }
+              }
+            >
+              11:30
+            </Text>
+            <View
+              style={
+                Object {
+                  "marginTop": 10,
+                }
+              }
+            >
+              <View
+                collapsable={false}
+              >
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                >
+                  <View
+                    ctx={
+                      Object {
+                        "menuActions": Object {
+                          "_getOpenedMenu": [Function],
+                          "_notify": [Function],
+                          "closeMenu": [Function],
+                          "isMenuOpen": [Function],
+                          "openMenu": [Function],
+                          "toggleMenu": [Function],
+                        },
+                        "menuRegistry": Object {
+                          "getAll": [Function],
+                          "getMenu": [Function],
+                          "setOptionsCustomStyles": [Function],
+                          "subscribe": [Function],
+                          "unsubscribe": [Function],
+                          "updateLayoutInfo": [Function],
+                        },
+                      }
+                    }
+                    style={
+                      Array [
+                        Object {
+                          "top": -42,
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    <Text />
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+  <RCTSafeAreaView
+    emulateUnlessSupported={true}
+    pointerEvents="box-none"
+    style={
+      Object {
+        "bottom": 0,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  >
+    <View
+      collapsable={false}
+      onLayout={[Function]}
+      pointerEvents="box-none"
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    />
+  </RCTSafeAreaView>
+</View>
+`;

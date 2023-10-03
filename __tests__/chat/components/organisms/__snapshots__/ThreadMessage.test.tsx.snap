@@ -1,0 +1,364 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ThreadMessage test renders Message type - text 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderBottomColor": "#aaa",
+        "borderBottomWidth": 0.3,
+        "flexDirection": "column",
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={Object {}}
+  >
+    <Text
+      style={
+        Object {
+          "fontFamily": "NotoSansJP_700Bold",
+        }
+      }
+    />
+    <Text
+      style={
+        Object {
+          "fontSize": 9,
+          "marginTop": 3,
+        }
+      }
+    />
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "flexDirection": "row",
+        "marginVertical": 8,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#888",
+            "borderBottomLeftRadius": 40,
+            "borderBottomRightRadius": 40,
+            "borderRadius": 40,
+            "borderTopLeftRadius": 40,
+            "borderTopRightRadius": 40,
+            "height": 40,
+            "justifyContent": "center",
+            "marginTop": -4,
+            "width": 40,
+          }
+        }
+      >
+        <RNCMaskedView>
+          <View
+            pointerEvents="none"
+            style={
+              Object {
+                "bottom": 0,
+                "left": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#000",
+                  "borderRadius": 40,
+                  "height": 40,
+                  "width": 40,
+                }
+              }
+            />
+          </View>
+          <Image
+            resizeMode="cover"
+            source={
+              Object {
+                "uri": "https://profile-image-s",
+              }
+            }
+            style={
+              Object {
+                "height": 40,
+                "width": 40,
+              }
+            }
+            testID="ImageIcon-Image"
+          />
+        </RNCMaskedView>
+        <View
+          style={
+            Object {
+              "borderColor": "#C7D601",
+              "borderRadius": 40,
+              "borderWidth": 2,
+              "height": 40,
+              "position": "absolute",
+              "width": 40,
+            }
+          }
+          testID="ImageIcon-Border"
+        />
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "justifyContent": "center",
+          "marginLeft": 10,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "flexDirection": "column",
+            "paddingRight": 6,
+          }
+        }
+      >
+        <Text
+          ellipsizeMode="middle"
+          numberOfLines={1}
+          style={
+            Object {
+              "fontFamily": "NotoSansJP_700Bold",
+              "fontSize": 12,
+              "lineHeight": 14,
+              "width": 640,
+            }
+          }
+        >
+          ABC
+        </Text>
+        <Text
+          ellipsizeMode="middle"
+          style={
+            Object {
+              "fontFamily": "NotoSansJP_400Regular",
+              "fontSize": 12,
+              "lineHeight": 16,
+              "marginTop": 6,
+              "width": 640,
+            }
+          }
+        >
+          @TestUser It's a test
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "marginTop": 8,
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginRight": 4,
+          "marginTop": 10,
+        }
+      }
+    >
+      <View>
+        <Text
+          style={
+            Object {
+              "color": "#737680",
+              "fontSize": 10,
+            }
+          }
+        >
+          11:30
+        </Text>
+      </View>
+      <View>
+        <Text
+          style={
+            Object {
+              "color": "#737680",
+              "fontSize": 10,
+            }
+          }
+        >
+          既読
+        </Text>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "flexDirection": "column",
+        "marginTop": 0,
+      }
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "marginBottom": 7,
+        }
+      }
+    >
+      <Text
+        ellipsizeMode="middle"
+        numberOfLines={1}
+        style={
+          Object {
+            "color": "#0082C7",
+            "fontFamily": "NotoSansJP_700Bold",
+            "fontSize": 12,
+            "lineHeight": 14,
+            "marginLeft": 0,
+            "paddingTop": 4,
+          }
+        }
+      >
+        その他のメッセージを読む
+      </Text>
+    </View>
+    <View
+      collapsable={false}
+      onTouchEnd={[Function]}
+      onTouchStart={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#F7F7F8",
+          "borderColor": "#aaa",
+          "borderRadius": 30,
+          "borderWidth": 1,
+          "elevation": 0,
+          "flex": 1,
+          "height": 30,
+          "justifyContent": "center",
+          "marginBottom": 20,
+          "marginLeft": 0,
+          "marginTop": 8,
+          "opacity": 1,
+          "shadowColor": "#000",
+          "shadowOffset": Object {
+            "height": 2,
+            "width": 0,
+          },
+          "shadowOpacity": 0,
+          "shadowRadius": 8,
+          "width": 90,
+        }
+      }
+    >
+      <View
+        accessibilityState={
+          Object {
+            "disabled": false,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flex": 1,
+              "flexDirection": "row",
+              "justifyContent": undefined,
+              "paddingHorizontal": undefined,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignContent": undefined,
+                "flexDirection": undefined,
+                "justifyContent": undefined,
+                "paddingTop": 0,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#343538",
+                  "fontFamily": "NotoSansJP_400Regular",
+                  "fontSize": 13,
+                  "lineHeight": 30,
+                  "paddingTop": 0,
+                  "textAlign": undefined,
+                }
+              }
+            >
+              返信する
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

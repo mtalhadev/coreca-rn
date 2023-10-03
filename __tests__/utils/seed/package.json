@@ -1,0 +1,61 @@
+{
+    "name": "seed",
+    "version": "0.9.1",
+    "description": "Seed",
+    "main": "seed.js",
+    "author": "",
+    "license": "",
+    "scripts": {
+        "seed-import": "node ./lib/seed.js from ./data.json",
+        "seed-export": "node ./lib/seed.js to ./data.json",
+        "batchUpdate-project-period": "node ./lib/batchupdate.js projectpriod ./data.json",
+        "batchUpdate-worker-left": "node ./lib/batchupdate.js workerleft ./data.json",
+        "start-emulator": "firebase --project='demo-emulator-project' emulators:start"
+    },
+    "dependencies": {
+        "@microsoft/tsdoc": "^0.13.2",
+        "commander": "^9.3.0",
+        "date-fns": "^2.28.0",
+        "dotenv": "^16.0.1",
+        "firebase": "9.1.1",
+        "firebase-admin": "^10.3.0",
+        "firestore-export-import": "^1.1.0",
+        "firestore-parser": "^0.9.0",
+        "jest": "27.4.1",
+        "lodash": "^4.17.21",
+        "log4js": "^6.5.2",
+        "react-native-logs": "^4.0.1",
+        "ts-pattern": "^3.3.5",
+        "uuid": "^8.3.2",
+        "xlsx": "^0.18.4"
+    },
+    "devDependencies": {
+        "@types/dotenv": "^8.2.0",
+        "@types/jest": "27.4.1",
+        "@types/lodash": "^4.14.175",
+        "@types/log4js": "^2.3.5",
+        "@types/node": "^18.0.0",
+        "@types/uuid": "^8.3.3",
+        "@typescript-eslint/eslint-plugin": "^4.29.3",
+        "@typescript-eslint/parser": "^4.29.3",
+        "eslint": "^7.32.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-prettier": "^3.4.1",
+        "firebase-tools": "^10.6.0",
+        "json-loader": "^0.5.7",
+        "lint-staged": "^11.1.2",
+        "prettier": "^2.3.2",
+        "ts-node": "^10.8.1",
+        "typesafe-actions": "^5.1.0",
+        "typescript": "~4.3.5"
+    },
+    "private": true,
+    "lint-staged": {
+        "./**/*.{js,ts,tsx}": [
+            "yarn fix"
+        ]
+    },
+    "config": {
+        "test": "test"
+    }
+}

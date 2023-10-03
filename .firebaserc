@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "coreca-98aa2",
+    "prod": "coreca-98aa2"
+  },
+  "targets": {}
+}

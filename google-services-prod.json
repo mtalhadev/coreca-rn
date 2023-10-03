@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "970655509448",
+    "project_id": "coreca-test",
+    "storage_bucket": "coreca-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:970655509448:android:5e85236ee4fa51f6a5eefd",
+        "android_client_info": {
+          "package_name": "com.coreca.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "970655509448-pk7ij4jmqi9fc04r06js9bv9t9p4433p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4aJmvyl2byxclV7Za_jWTCIhjMOLcixE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "970655509448-pk7ij4jmqi9fc04r06js9bv9t9p4433p.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "970655509448-4a15tc2uncoqjh1k3llod562od5dcbad.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.coreca.app",
+                "app_store_id": "1590311325"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

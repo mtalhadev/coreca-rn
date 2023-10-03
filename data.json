@@ -1,0 +1,38 @@
+[{
+    "createdAt": 1673462910000,
+    "index": 0,
+    "projectId": "",
+    "room": {
+        "createdAt": 1673462910000,
+        "keyId": "f70c621f-abd9-4b71-aa06-c06d3d9a814e",
+        "lastMessage": "Hi",
+        "name": "",
+        "roomId": "548217c1-56ff-43ec-af6a-6dfaff42594f",
+        "roomType": "onetoone",
+        "rootThreadId": "33cf711a-d88a-405f-acfa-a4777b5dbca5",
+        "updatedAt": 1673463759000
+    },
+    "roomId": "548217c1-56ff-43ec-af6a-6dfaff42594f",
+    "roomRole": "admin",
+    "unreadCount": 0,
+    "updatedAt": 1673462911000,
+    "workerId": "1eb215a6-83be-42ca-a9a4-5d7fca0d7533"
+}, {
+    "createdAt": 1673441492000,
+    "index": 0,
+    "projectId": "",
+    "room": {
+        "createdAt": 1673441492000,
+        "keyId": "bfc9d6a8-cd85-435d-a40f-5de4032a757c",
+        "name": "",
+        "roomId": "943323e4-ca0e-4b09-bbfe-030d78a0116a",
+        "roomType": "onetoone",
+        "rootThreadId": "5fcadb8b-f50c-45c8-b30f-6fb0903b15f4",
+        "updatedAt": 1673441492000
+    },
+    "roomId": "943323e4-ca0e-4b09-bbfe-030d78a0116a",
+    "roomRole": "admin",
+    "unreadCount": 0,
+    "updatedAt": 1673441492000,
+    "workerId": "1eb215a6-83be-42ca-a9a4-5d7fca0d7533"
+}]

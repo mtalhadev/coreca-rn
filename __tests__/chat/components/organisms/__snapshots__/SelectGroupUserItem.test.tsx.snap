@@ -1,0 +1,159 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SelectGroupUserItem test renders UI correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFF",
+        "borderRadius": 3,
+        "flexDirection": "row",
+        "height": 60,
+        "marginBottom": 10,
+        "paddingBottom": 8,
+        "width": 720,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "marginLeft": 0,
+        "zIndex": -1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#888",
+            "borderBottomLeftRadius": 40,
+            "borderBottomRightRadius": 40,
+            "borderRadius": 40,
+            "borderTopLeftRadius": 40,
+            "borderTopRightRadius": 40,
+            "height": 40,
+            "justifyContent": "center",
+            "marginRight": 10,
+            "width": 40,
+          }
+        }
+      >
+        <RNCMaskedView>
+          <View
+            pointerEvents="none"
+            style={
+              Object {
+                "bottom": 0,
+                "left": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#000",
+                  "borderRadius": 40,
+                  "height": 40,
+                  "width": 40,
+                }
+              }
+            />
+          </View>
+          <Image
+            resizeMode="cover"
+            source={
+              Object {
+                "uri": "https://profile-logo-s",
+              }
+            }
+            style={
+              Object {
+                "height": 40,
+                "width": 40,
+              }
+            }
+            testID="ImageIcon-Image"
+          />
+        </RNCMaskedView>
+        <View
+          style={
+            Object {
+              "borderColor": "#C7D601",
+              "borderRadius": 40,
+              "borderWidth": 1,
+              "height": 40,
+              "position": "absolute",
+              "width": 40,
+            }
+          }
+          testID="ImageIcon-Border"
+        />
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "justifyContent": "space-between",
+          "width": 720,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "width": 650,
+          }
+        }
+      >
+        <View>
+          <Text
+            style={
+              Object {
+                "fontFamily": "NotoSansJP_500Medium",
+                "fontSize": 13,
+                "lineHeight": 15,
+              }
+            }
+          >
+            ABC
+          </Text>
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            style={
+              Object {
+                "color": "#737680",
+                "fontFamily": "NotoSansJP_400Regular",
+                "fontSize": 12,
+                "lineHeight": 14,
+                "marginTop": 2,
+              }
+            }
+          >
+            ABCDEFG
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

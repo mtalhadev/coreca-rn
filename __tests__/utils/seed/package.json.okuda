@@ -1,0 +1,83 @@
+{
+    "name": "seed",
+    "version": "0.9.1",
+    "description": "Seed",
+    "main": "seed.js",
+    "author": "",
+    "license": "",
+    "scripts": {
+        "?start-emulator": "echo 'Firebaseエミュレータを起動（起動したらまずseedでデータをインポートすること、エミュレータをシャットダウンするとデータは毎回消去される）'",
+        "start-emulator": "firebase --project='demo-emulator-project' emulators:start",
+        "?seed-import": "echo 'seed from ./data.jsonを実行'",
+        "seed-import": "node ./lib/seed.js from ./data.json",
+        "?seed-export": "echo 'seed to ./data.jsonを実行'",
+        "seed-export": "node ./lib/seed.js to ./data.json",
+        "?build": "echo '.tsを.jsへトランスパイル（設定は ./tsconfig.json を参照）'",
+        "build": "npx tsc",
+        "?jest": "echo 'jestを実行'",
+        "jest": "npx jest",
+        "?test": "echo 'ユニットテストを実行（結果は./coverageディレクトリに出力）'",
+        "test": "npx jest --coverage",
+        "?test-watch": "echo 'ユニットテストを監視実行'",
+        "test-watch": "npx jest --coverage --watch",
+        "?lint": "echo 'ESLintを実行'",
+        "lint": "npx eslint --ext './**/*.{js,ts,tsx}'",
+        "?lint-fix": "echo 'ESLintを実行して自動修正'",
+        "lint:fix": "npx eslint --fix --ext './**/*.{js,ts,tsx}'",
+        "?format": "echo 'prettierを実行'",
+        "format": "npx prettier --check './**/*.{js,ts,tsx}'",
+        "?format-fix": "echo 'prettierを実行して自動修正'",
+        "format:fix": "npx prettier --write './**/*.{js,ts,json}'",
+        "fix": "yarn format:fix && yarn lint:fix",
+        "?seed-import-ts": "echo 'ts-nodeでseed.tsを直接実行'",
+        "seed-import-ts": "npx ts-node ./seed.ts from ./data.json",
+        "?seed-export-ts": "echo 'ts-nodeでseed.tsを直接実行'",
+        "seed-eport-ts": "npx ts-node ./seed.ts to ./data.json"
+    },
+    "dependencies": {
+        "@microsoft/tsdoc": "^0.13.2",
+        "commander": "^9.3.0",
+        "date-fns": "^2.28.0",
+        "dotenv": "^16.0.1",
+        "firebase": "9.1.1",
+        "firebase-admin": "^10.3.0",
+        "firestore-export-import": "^1.1.0",
+        "firestore-parser": "^0.9.0",
+        "jest": "27.4.1",
+        "lodash": "^4.17.21",
+        "log4js": "^6.5.2",
+        "react-native-logs": "^4.0.1",
+        "ts-pattern": "^3.3.5",
+        "uuid": "^8.3.2",
+        "xlsx": "^0.18.4"
+    },
+    "devDependencies": {
+        "@types/dotenv": "^8.2.0",
+        "@types/jest": "27.4.1",
+        "@types/lodash": "^4.14.175",
+        "@types/log4js": "^2.3.5",
+        "@types/node": "^18.0.0",
+        "@types/uuid": "^8.3.3",
+        "@typescript-eslint/eslint-plugin": "^4.29.3",
+        "@typescript-eslint/parser": "^4.29.3",
+        "eslint": "^7.32.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-prettier": "^3.4.1",
+        "firebase-tools": "^10.6.0",
+        "json-loader": "^0.5.7",
+        "lint-staged": "^11.1.2",
+        "prettier": "^2.3.2",
+        "ts-node": "^10.8.1",
+        "typesafe-actions": "^5.1.0",
+        "typescript": "~4.3.5"
+    },
+    "private": true,
+    "lint-staged": {
+        "./**/*.{js,ts,tsx}": [
+            "yarn fix"
+        ]
+    },
+    "config": {
+        "test": "test"
+    }
+}

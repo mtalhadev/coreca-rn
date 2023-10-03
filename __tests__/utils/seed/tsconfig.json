@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "strict": true,
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "outDir": "lib",
+        "sourceMap": true,
+        "noImplicitReturns": true,
+        "target": "ES2017",
+        "types": ["node", "jest"],
+        "lib": ["DOM", "ESNext"] // bundle library
+    },
+    // トランスパイル対象
+    "include": ["./**/*"],
+    "exclude": [
+        "lib",
+        "data",
+        "node_modules",
+        "./**/*.test.ts", // unit test file
+        "./firestore-export-import/**/*"
+    ]
+}

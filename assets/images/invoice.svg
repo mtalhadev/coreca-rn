@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="21" viewBox="0 0 21 21">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_323" data-name="長方形 323" width="21" height="21" transform="translate(72.275 150.249)" stroke="#000" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="invoice" transform="translate(-72.275 -150.249)" clip-path="url(#clip-path)">
+    <g id="invoice-2" data-name="invoice" transform="translate(72.275 150.189)">
+      <g id="グループ_546" data-name="グループ 546" transform="translate(3.573 19.442)">
+        <g id="グループ_545" data-name="グループ 545">
+          <rect id="長方形_324" data-name="長方形 324" width="13.669" height="1.553"/>
+        </g>
+      </g>
+      <g id="グループ_548" data-name="グループ 548" transform="translate(7.3 6.938)">
+        <g id="グループ_547" data-name="グループ 547">
+          <path id="パス_192" data-name="パス 192" d="M14.206,8.287H9.416a.777.777,0,0,0,0,1.553h4.789a.777.777,0,1,0,0-1.553Z" transform="translate(-8.64 -8.287)"/>
+        </g>
+      </g>
+      <g id="グループ_550" data-name="グループ 550" transform="translate(7.3 10.562)">
+        <g id="グループ_549" data-name="グループ 549">
+          <path id="パス_193" data-name="パス 193" d="M17.83,12.577H9.416a.777.777,0,0,0,0,1.553H17.83a.777.777,0,0,0,0-1.553Z" transform="translate(-8.64 -12.577)"/>
+        </g>
+      </g>
+      <g id="グループ_552" data-name="グループ 552" transform="translate(0 0)">
+        <g id="グループ_551" data-name="グループ 551">
+          <path id="パス_194" data-name="パス 194" d="M20.667.171A.777.777,0,0,0,19.833.3L17.658,2.221,15.481.274a.776.776,0,0,0-1.036,0L12.271,2.219,10.1.274a.776.776,0,0,0-1.035,0L6.883,2.221,4.709.3A.777.777,0,0,0,3.417.879V14.7H.777A.777.777,0,0,0,0,15.48v1.89a3.706,3.706,0,0,0,3.7,3.7V19.518A2.151,2.151,0,0,1,1.553,17.37V16.257H13.721V17.37a3.7,3.7,0,1,0,7.4,0V.879A.777.777,0,0,0,20.667.171Zm-1.1,17.2a2.149,2.149,0,0,1-4.3,0V15.48A.777.777,0,0,0,14.5,14.7H4.97V2.6l1.4,1.24a.777.777,0,0,0,1.032,0L9.579,1.9,11.753,3.84a.776.776,0,0,0,1.036,0L14.963,1.9,17.138,3.84a.777.777,0,0,0,1.032,0l1.4-1.239Z" transform="translate(0 -0.077)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

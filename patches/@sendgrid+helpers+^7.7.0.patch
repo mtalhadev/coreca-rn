@@ -1,0 +1,57 @@
+diff --git a/node_modules/@sendgrid/helpers/classes/attachment.js b/node_modules/@sendgrid/helpers/classes/attachment.js
+index 46beed4..6cafaf5 100644
+--- a/node_modules/@sendgrid/helpers/classes/attachment.js
++++ b/node_modules/@sendgrid/helpers/classes/attachment.js
+@@ -6,8 +6,6 @@
+ const toCamelCase = require('../helpers/to-camel-case');
+ const toSnakeCase = require('../helpers/to-snake-case');
+ const deepClone = require('../helpers/deep-clone');
+-const fs = require('fs');
+-const path = require('path');
+ 
+ /**
+  * Attachment class
+@@ -47,28 +45,14 @@ class Attachment {
+       type,
+       disposition,
+       contentId,
+-      filePath,
+     } = data;
+ 
+-    if ((typeof content !== 'undefined') && (typeof filePath !== 'undefined')) {
+-      throw new Error(
+-        "The props 'content' and 'filePath' cannot be used together."
+-      );
+-    }
+-
+     //Set data
+     this.setFilename(filename);
+     this.setType(type);
+     this.setDisposition(disposition);
+     this.setContentId(contentId);
+-    this.setContent(filePath ? this.readFile(filePath) : content);
+-  }
+-
+-  /**
+-   * Read a file and return its content as base64
+-   */
+-  readFile(filePath) {
+-    return fs.readFileSync(path.resolve(filePath));
++    this.setContent(content);
+   }
+ 
+   /**
+diff --git a/node_modules/@sendgrid/helpers/classes/response-error.js b/node_modules/@sendgrid/helpers/classes/response-error.js
+index 13acc41..9bc5997 100644
+--- a/node_modules/@sendgrid/helpers/classes/response-error.js
++++ b/node_modules/@sendgrid/helpers/classes/response-error.js
+@@ -27,8 +27,7 @@ class ResponseError extends Error {
+     }
+ 
+     //Clean up stack trace
+-    const regex = new RegExp(process.cwd() + '/', 'gi');
+-    this.stack = this.stack.replace(regex, '');
++    this.stack = null;
+   }
+ 
+   /**
